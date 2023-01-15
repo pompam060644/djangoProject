@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body bgcolor="#ffb6c1">
+    <h1 class="text-center text-bg-primary"> ประวัติวันคริสต์มาส 25 ธันวาคม </h1>
+    <h2 class="text-center text-bg-warning"> วันคริสต์มาส </h2>
+    <hr size="5" class="text-bg-danger" width="50%"  >
+    <p class="bg-white text-danger text-center ">
+        26/12/65 <br>
+        <b>ความหมายของวันคริสต์มาส </b>
+         <br>การพิมพ์เว็บไซต์(ร้องขอ) การคลิกลิงก์(ร้องขอ) <br>
+        การคลิกปุ่ม submit (ส่งข้อมูลกลับด้วย) <br>
+        เขียนเว็บแบบ MVT <br>
+    </p> <br><br><br>
+    <table class="table table-danger table-striped  table-hover  table-bordered" >
+{#  <table border="1" width="80%" align="center" bgcolor="white" >#}
+
+        <tr >
+            <th width="20%">รหัสวิชา </th>
+            <th width="50%">ชื่อวิชา</th>
+            <th width="15%">หน่วยกิต</th>
+            <th width="15%">เกรด</th>
+        </tr>
+
+        <tr class="text-center">
+            <td> 653423100-1 </td>
+            <td class="text-start"> database </td>
+            <td> 4 </td>
+            <td> A </td>
+        </tr>
+
+        <tr bgcolor="#f5f5dc">
+            <td align="center"> 653123400-2 </td>
+            <td> art </td>
+            <td align="center"> 3.5 </td>
+            <td align="center"> B+ </td>
+        </tr>
+
+    </table>
+
+    <a href="{% url 'firstweb' %}" class="btn btn-dark">Go to Second Page</a>
+    <a href="{% url 'secondpage' %}"class="btn btn-dark" >Go to first Web Page</a>
+    <br><br><br><br><br>
+</body>
+
+</html>
+{% endblock %}

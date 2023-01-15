@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-4 p-5 bg-primary text-white rounded">
+  <h1>Jumbotron Example</h1>
+  <p>ยินดีต้อนรับผู้บริหาร บริษัท ซีพีออล และผู้ติดตามทุกท่าน</p>
+  
+<div class="row">
+    <div class="col-lg-4">
+        <img src="{% static 'images/7-1.jpg' %}">
+    </div>
+    <div class="col-lg-8">
+        <img src="{% static 'images/Tib0DieO04jK8Xydh1lw.jpg' %}">
+    </div>
+</div>
+    
+<div class="text-center" >
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+    <div class="spinner-border text-dark"></div>
+    <div class="spinner-border text-light"></div>
+
+</div>
+
+</div>
+{% endblock %}
